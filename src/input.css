@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link {
+  @apply flex
+    py-2
+    px-3
+    my-3
+    rounded-br-xl
+    rounded-tr-xl
+    bg-gray-700
+    hover:bg-sky-500
+    transition-all
+    duration-300
+    text-white/70
+    hover:text-white
+    items-center
+    text-sm
+    md:text-base;
+}
+
+.icons-style {
+  @apply mt-2
+    mx-2
+    py-2
+    px-2
+    flex
+    justify-center
+    items-center
+    rounded-lg
+    w-full
+    bg-gray-700
+    text-white/70
+    hover:text-white
+    hover:bg-sky-500
+    transition-all
+    duration-300
+    cursor-pointer;
+}
+
+.open {
+  left: 0;
+}
+
+@media (min-width: 786px) {
+.close {
+    left: -300px;
+  }
+}
+
+@media (max-width: 786px) {
+.close {
+    left: -200px;
+  }
+}
